@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useStateValue } from '../StateProvider'
 const Advance = ()=>{
-    const {lang} = useStateValue()
+    const [{lang},dispatch] = useStateValue()
     const [value1,setVal1] = useState('')
     const [value2,setVal2] = useState('')
     const [value3,setVal3] = useState('')

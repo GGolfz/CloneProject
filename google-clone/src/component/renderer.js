@@ -3,7 +3,7 @@ import Normal from './normal';
 import Advance from './advance';
 import { useStateValue } from '../StateProvider';
 const Renderer = () => {
-    const {type} = useStateValue()
+    const [{type},dispatch] = useStateValue()
     if(type === 'normal'){
         return (
             <>

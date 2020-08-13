@@ -3,7 +3,7 @@ import { useStateValue } from '../StateProvider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 const Normal = ()=> {
-    const {lang} = useStateValue()
+    const [{lang},dispatch] = useStateValue()
     const [search,setSearch] = useState('')
     let text =''
     if(lang === 'th'){
